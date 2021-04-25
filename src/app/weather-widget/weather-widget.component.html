@@ -1,0 +1,19 @@
+<div class="container">
+    <h1>Weather Widget</h1>
+    <div [formGroup]="WeatherForm">
+        <input class="form-control" type="text" placeholder="Enter City Name which you want to know weather" [(ngModel)]="city" formControlName="city" minlength="2" maxlength="10" required>
+        <button class="btn btn-dark" (click)="FetchWeatherData()">Search City</button>
+    </div>
+
+    <div *ngIf="WeatherData">
+        <div class="card">
+            <img src="{{WeatherData.current.weather_icons[0]}}" alt="Icon of Weather">
+            <h3>{{WeatherData?.current.temperature}}°C</h3>
+            <h4>Feels Like: {{WeatherData?.current?.feelslike }}°C</h4>
+            <br><br>
+            <h3>{{WeatherData?.location?.name}}, {{WeatherData?.location.region}}</h3>
+            <h4>{{WeatherData?.location.timezone_id}}</h4>
+            <h4>Humidity: {{WeatherData?.currennt?.humidity}}%</h4>
+        </div>
+    </div>
+</div>

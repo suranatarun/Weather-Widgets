@@ -1,0 +1,32 @@
+h1{
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+input[type=text] {
+    border:2px solid #000;
+    box-shadow:3px 3px 10px 3px rgb(48, 46, 46);
+    color:#000;
+    font-weight:700;
+    font-size:19px;
+    letter-spacing: 1px;
+    font-family: 'Times New Roman', Times, serif;
+}
+button {
+    margin: 10px auto;
+    display: block;
+    width:150px;
+    font-size:18px;
+    font-weight: 500;
+    box-shadow: 3px 3px 10px 3px rgb(136, 134, 134);
+}
+.card{
+    Background-color:#000;
+    background-image: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(8, 7, 42, 1));
+    color:white;
+    display: block;
+    margin:50px auto;
+    width:300px;
+    padding:40x 20px;
+    border-radius: 10px;
+    text-align: center;
+}
